@@ -1,4 +1,4 @@
-import { TGaussianBlurConfig, TSize } from '../types/stylize.d';
+import { TGaussianBlurConfig, TSize } from '../types/stylize';
 import usePromise from '../utils/usePromise';
 
 const mulTable = [

@@ -1,4 +1,4 @@
-import { TLecaConfig } from '../types/stylize.d';
+import { TLecaConfig } from '../types/stylize';
 import usePromise from '../utils/usePromise';
 
 export const LoadLeca = (params: TLecaConfig): Promise<HTMLCanvasElement> | false => {

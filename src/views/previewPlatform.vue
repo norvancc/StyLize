@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import Stylize from '@/core/index.vue';
+import Stylize from '../core/index.vue';
 </script>
 
 <style scoped lang="scss">

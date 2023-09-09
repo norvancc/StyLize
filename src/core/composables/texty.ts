@@ -1,4 +1,4 @@
-import { TSize, TTextyConfig } from '../types/stylize.d';
+import { TSize, TTextyConfig } from '../types/stylize';
 import usePromise from '../utils/usePromise';
 
 /**

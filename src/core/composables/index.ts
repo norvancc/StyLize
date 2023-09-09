@@ -1,4 +1,4 @@
-import { TEffectType, TGaussianBlurConfig, TGrayScaleConfig, TLecaConfig, TSize, TTextyConfig } from '../types/stylize.d';
+import { TEffectType, TGaussianBlurConfig, TGrayScaleConfig, TLecaConfig, TSize, TTextyConfig } from '../types/stylize';
 import { LoadGaussianBlur } from './blur';
 import { LoadTexty } from './texty';
 import { LoadGrayscale } from './grayscale';

@@ -1,4 +1,4 @@
-import { TGrayScaleConfig, TSize } from '../types/stylize.d';
+import { TGrayScaleConfig, TSize } from '../types/stylize';
 import usePromise from '../utils/usePromise';
 
 /**

@@ -1,6 +1,6 @@
 import { EffectMap, loadEffect } from './composables';
 import { LoadTexty } from './composables/texty';
-import { TEffectConfig, TStylize } from './types/stylize.d';
+import { TEffectConfig, TStylize } from './types/stylize';
 import { createCanvas, loadImage } from './utils/tools';
 
 /**
