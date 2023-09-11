@@ -15,12 +15,13 @@ onMounted(() => {
       container: canvasContainerRef.value,
     });
     stylize.draw({
-      type: 'texty',
+      type: 'noise',
       data: {
-        url: '/src/assets/a.jpg',
-        text: '@#$%&*-=:. ',
-        orderly: false,
-        scale: 10,
+        url: '/src/assets/c.jpg',
+        intensity: 380,
+
+        // amplitude: 10,
+        // frequency: 0.5,
       },
     });
   });

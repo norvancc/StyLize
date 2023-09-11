@@ -1,4 +1,4 @@
-export type TEffectType = 'blur' | 'texty' | 'grayscale' | 'leca';
+export type TEffectType = 'blur' | 'texty' | 'grayscale' | 'leca' | 'mixed' | 'rmColor' | 'comic' | 'ripple' | 'noise';
 /** Canvas init params */
 export type TStylize = {
   width: number;
@@ -43,9 +43,59 @@ export type TLecaConfig = {
   url: string;
 };
 
+/** Mixed init params */
+export type TMixedConfig = {
+  /** image url */
+  url1: string;
+  /** image url */
+  url2: string;
+};
+
+/** RmColor init params */
+export type TRmColorConfig = {
+  /** image url */
+  url: string;
+  /** wait to replaced color(only accept hex color) */
+  color: string;
+  /** tolerance */
+  tolerance: number;
+};
+
+/** Comic init params */
+export type TComicConfig = {
+  /** image url */
+  url: string;
+};
+
+/** Ripple init params */
+export type TRippleConfig = {
+  /** image url */
+  url: string;
+  /** amplitude */
+  amplitude: number;
+  /** frequency */
+  frequency: number;
+};
+
+/** Noise init params */
+export type TNoiseConfig = {
+  /** image url */
+  url: string;
+  /** intensity */
+  intensity: number;
+};
+
 /** Effect init params */
 export type TEffectConfig = {
   type: TEffectType;
-  /** Gaussian blur init params */
-  data: TGaussianBlurConfig | TTextyConfig | TGrayScaleConfig | TLecaConfig;
+  data:
+    | TGaussianBlurConfig
+    | TTextyConfig
+    | TGrayScaleConfig
+    | TLecaConfig
+    | TMixedConfig
+    | TRmColorConfig
+    | TComicConfig
+    | TRippleConfig
+    | TNoiseConfig;
 };
